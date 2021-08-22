@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+/*css for header*/
+.header{
+  display: grid;
+  place-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*css for dashboard header*/
+.Dashboard{
+  width: 80%;
+  height: 3em;
+  background-color: hsla(149, 78%, 57%, 1);
+  border-radius: 5px 5px 20px 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  font-size: 2em;
+  font-weight: 800;
+  color: hsla(236, 78%, 57%, 1);
 }
 
-.App-link {
-  color: #61dafb;
+/*DASH BOARD BUTTON */
+.button-one {
+  margin: 0.5em;
+  font-size: 1em;
+  font-weight: 600;
+  border: none;
+  padding: 1em;
+  border-radius: 10px;
+  color: hsla(236, 78%, 57%, 1);
+  background-color: hsla(149, 78%, 57%, 1);
+}
+/*card button*/
+.button-two{
+  margin: 1em;
+  font-size: 1em;
+  border: none;
+  padding: 1em 1.5em 1em 1.5em;
+  border-radius: 10px;
+  color: #fff;
+  background-color: hsla(236, 78%, 57%, 1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/*CARD CSS*/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  min-width:20em;
+  border-radius: 10px 10px 10px 10px;
+  display: grid;
+  place-items: center;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+table {
+  max-width:100%;
+  word-wrap: break-word;
+}
+
+/*css for image*/
+.image{
+border-radius:40px;
+height:200px;
+margin-left: 0.8em;
+margin-top: 0.5em;
+
+}
+
+.margin{
+  margin: 10px;
+}
+/*footer css*/
+.footer {
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  color:#fff;
+  background-color: hsla(149, 78%, 57%, 1);
+}
+
+/*grid for userlist*/
+
+.user-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+@media (min-width:0px) and (max-width:600px) {
+  .user-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (min-width:601px) and (max-width:900px) {
+  .user-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
   }
 }
